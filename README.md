@@ -16,20 +16,7 @@ Development: [web.development.pelandolabs.com.br](https://web.development.peland
 
 ## Prerequisite
 
-Start at [link confluence](adicionar)
-
-Install `build-essential` [tutorial](https://linuxhint.com/install-build-essential-ubuntu/)
-
-Install `cmake` [tutorial](https://linuxhint.com/install-cmake-on-ubuntu)
-
-Install `yarn` [tutorial](https://linuxize.com/post/how-to-install-yarn-on-ubuntu-20-04/)
-
-Install `nodejs` [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt)
-
-Install `docker` [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt)
-
-Install `docker-compose` [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt)
-
+Start at [Confluence](https://pelandobr.atlassian.net/l/c/wXKFtYce)
 
 ## Dev Usage
 
@@ -45,7 +32,7 @@ cd client-web
 3. Install project dependencies:
 
 ```bash
-sudo yarn install
+  yarn install
 ```
 
 4. Start the build process in watch mode:
@@ -53,15 +40,15 @@ sudo yarn install
 > <small>This will build both the express server for the SSR as well as the client's code!</small>
 
 ```bash
-sudo yarn build:watch
+   yarn build:watch
 ```
 
-5. When the first build is done, run the [API](https://github.com/pelando/api.git) server on another terminal::
+5. When the first build is done, run the server on another terminal:
 
 > <small>You will see all the created files on the terminal output when the build finishes</small>
 
 ```
-sudo yarn start:dev
+  yarn start:dev
 ```
 
 > <small>⚠️ Both the build and the server will be watching your files for changes but there is no Hot Module Replacement or Live reload, so make sure that you refresh your browser.</small>
